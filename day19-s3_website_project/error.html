@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Bob</title>
+
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* ===== ERROR CONTAINER ===== */
+    .error-container {
+      animation: fadeIn 1.5s ease;
+    }
+
+    .error-code {
+      font-size: 8rem;
+      color: #38bdf8;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .error-container h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .error-container p {
+      margin-bottom: 30px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(56,189,248,0.4);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="error-container">
+    <div class="error-code">404</div>
+    <h2>Page Not Found</h2>
+    <p>
+      Oops! The page you are looking for doesn’t exist or has been moved.
+    </p>
+    <a href="index.html" class="btn">Go Back Home</a>
+  </div>
+
+</body>
+</html>
+
